@@ -2,3 +2,4 @@
 Collaborative repository for the BBA Web Designing and Programming Course.
 First commit on Sep 12, 2022 2:26 PM EDT.
 2-list-exercise commit on Sep 12, 2022 3:58 PM EDT. 
+3-image-exercise commit on Sep 12, 2022 04:16 PM EDT.

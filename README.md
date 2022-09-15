@@ -7,3 +7,4 @@ First commit on Sep 12, 2022 2:26 PM EDT.
 5-irregular-table-exercise commit on Sep 12,2022 04:45 PM EDT.
 1-basic-exercise-1.js commit on Sep 12, 2022 8:22 PM EDT.
 HTML and CSS mockup webpage commit on sep 14, 2022 08:50 PM EDT.
+Edit commit to HTML and CSS mockup webpage on Sep 14, 2022 11:54 PM EDT.

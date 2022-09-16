@@ -5,10 +5,13 @@ console.log(intro);
 
 // Exercise 2.
 let x = 1;
-let y =2;
+let y = 2;
+let z = x;
+let w = y;
+x = w;
+y = z;
 
-// I'm sure there are many ways to accomplish this task, is there a proper way to accomplish this task?
-x = x + x;
-y = y / y;
+
+
 
 

@@ -6,32 +6,34 @@
 
 body {
     font-family: nunito;  
+    font-size: 1rem;
+    line-height: 1.4;
+    display: flex;
+    flex-direction: column;
 }
 
-.div-1 {
+header {
     background: url("https://i.ibb.co/pbVgfpZ/header-splash-bg.png") no-repeat center;
     background-size:cover;
     background-position: bottom;
+    height: 725px;
     width: 100%;
-    height: 100vh;
     color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
 }
 
-.div-1 header {
-    padding: 0 7rem;
-}
-
-.div-1 ul {
+header ul {
     display: flex;
     list-style-type: none;
     text-transform: uppercase;
-    padding-top: 3rem;
-    justify-content: space-evenly;
     font-weight: 800;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 2rem;
 }
 
 .text {
-    padding-top: 2rem;
     transition: transform 0.1s;
 }
 
@@ -43,12 +45,9 @@ body {
 
 .content-main {
     width: 100%;
-    height: 100vh;
     color: white;
-    justify-content: space-between;
     text-align: center;
-    margin: 5rem auto;
-    padding: 6rem 0 0 0;
+    margin: auto;
 }
 
 .content-main h1 {
@@ -84,35 +83,51 @@ body {
     cursor: pointer;
 }
 
-.div-1 ion-icon {
-    width: 32px;
-    height: 32px;
-    margin-top: 11rem;
+.header-icons {
+    text-align: center;
+    padding-bottom: 2rem;
 }
 
-.div-2 {
+.header-icons i {
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    letter-spacing: 0.5rem;
+}
+
+.wrapper {
     width: 100%;
-    height: 75vh;
-    background: #f7f7f7 url("https://i.ibb.co/hWXDDdF/hand-with-iphone.png") no-repeat 75% -80%;
+    font-family: nunito;
 }
 
-.represent {
-    width: 50%;
-    padding: 8rem;
+.second {
+    display: flex;
+    height: 500px;
+    width: 100%;
+    background: #f7f7f7 url("https://i.ibb.co/hWXDDdF/hand-with-iphone.png");
+    background-repeat: no-repeat;
+    background-position: relative;
+    background-position: 80% -50%;
 }
 
-.div-2 h2 {
+.content {
+    width: 40%;
+    padding: 3rem 0rem;
+    margin-left: 10rem;
+}
+
+.second h2 {
     color: rgb(17, 167, 134);
     text-transform: uppercase;
     letter-spacing: 2px;
 }
 
-.div-2 p {
+.second p {
     letter-spacing: 1px;
     padding: 1rem 0;
+    font-size: 1rem;
 }
 
-.div-2 button {
+.second button {
     border-radius: 2px;
     border-style: none;
     background-color:rgb(17, 167, 134);
@@ -126,7 +141,7 @@ body {
     font-weight: bold;
 }
 
-.div-2 button:hover {
+.second button:hover {
     background-color: rgba(17, 167, 134, 0.5);
     color: rgb(255, 255, 255);
     cursor: pointer;
@@ -404,7 +419,25 @@ footer p {
     font-weight: bold;
 }
 
+@media (max-width: 1125px;){
+    .second{
+        width: 80%;
+    }
+}
 
+@media (max-width: 985px;){
+    .second{
+        width: 60%;
+    }
+}
 
+@media (max-width: 795px;){
+    .second{
+        width: 40%;
+        font-size: calc(-1.5em);
+    }
 
-
+    h3 {
+        font-size: calc(-1.5em);
+    }
+}

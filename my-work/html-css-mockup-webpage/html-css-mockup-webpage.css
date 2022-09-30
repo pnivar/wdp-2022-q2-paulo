@@ -16,11 +16,16 @@ header {
     background: url("https://i.ibb.co/pbVgfpZ/header-splash-bg.png") no-repeat center;
     background-size:cover;
     background-position: bottom;
-    height: 725px;
+    height: 45rem;
     width: 100%;
     color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
+}
+
+nav {
+    width: 95%;
+    margin: 0 auto;
 }
 
 header ul {
@@ -44,13 +49,14 @@ header ul {
 }
 
 .content-main {
-    width: 100%;
+    width: 95%;
     color: white;
     text-align: center;
     margin: auto;
 }
 
 .content-main h1 {
+    width: 95%;
     letter-spacing: 0.5rem;
     text-transform: uppercase;
     font-size: 3rem;
@@ -60,11 +66,11 @@ header ul {
     font-size: 1.5rem;
     font-weight: 100;
     font-family: sans-serif;
-    letter-spacing: 2px;
+    letter-spacing: 0.1rem;
 }
 
 .content-main button {
-    border-radius: 2px;
+    border-radius: 0.1rem;
     border-style: none;
     background-color:rgb(17, 167, 134);
     margin-top: 2rem;
@@ -73,7 +79,7 @@ header ul {
     text-transform: uppercase;
     font-family: nunito;
     color: white;
-    letter-spacing: 1px;
+    letter-spacing: 0.1rem;
     font-weight: bold;
 }
 
@@ -90,7 +96,7 @@ header ul {
 
 .header-icons i {
     color: rgb(255, 255, 255);
-    font-size: 32px;
+    font-size: 2rem;
     letter-spacing: 0.5rem;
 }
 
@@ -99,36 +105,35 @@ header ul {
     font-family: nunito;
 }
 
-.second {
+.represent {
     display: flex;
-    height: 500px;
+    height: 32rem;
     width: 100%;
     background: #f7f7f7 url("https://i.ibb.co/hWXDDdF/hand-with-iphone.png");
     background-repeat: no-repeat;
     background-position: relative;
-    background-position: 80% -50%;
+    background-position: 80% -55%;
 }
 
-.content {
+.represent .content {
     width: 40%;
-    padding: 3rem 0rem;
-    margin-left: 10rem;
+    padding: 9rem 0;
+    margin-left: 9rem;
 }
 
-.second h2 {
+.represent h2 {
     color: rgb(17, 167, 134);
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 0.1rem;
 }
 
-.second p {
-    letter-spacing: 1px;
-    padding: 1rem 0;
+.represent p {
+    letter-spacing: 0.1rem;
     font-size: 1rem;
 }
 
-.second button {
-    border-radius: 2px;
+.represent button {
+    border-radius: 0.1rem;
     border-style: none;
     background-color:rgb(17, 167, 134);
     margin-top: 2rem;
@@ -141,38 +146,42 @@ header ul {
     font-weight: bold;
 }
 
-.second button:hover {
+.represent button:hover {
     background-color: rgba(17, 167, 134, 0.5);
     color: rgb(255, 255, 255);
     cursor: pointer;
 }
 
-.div-3 {
+.design {
+    display: flex;
+    flex-direction: row-reverse;
     width: 100%;
-    height: 75vh;
+    height: 32rem;
     background-image: url("https://i.ibb.co/2jJwRTf/iphone-5c-flat.png");
     background-repeat: no-repeat;
-    background-position: 10% -170%;
+    background-position: 15% -140%;
 }
 
-.div-3 h2 {
+.design .content{
+    height: 100%;
+    width: 40%;
+    padding: 9rem 0;
+    margin-right: 9rem; 
+}
+
+.design h2 {
+    letter-spacing: 0.1rem;
     text-transform: uppercase;
     color: rgb(17, 167, 134);
 }
 
-.design {
-    width: 50%;
-    padding: 8rem;
-    float: right; 
+.design p {
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
 }
 
-#design {
-    letter-spacing: 1px;
-    padding: 1rem 0; 
-}
-
-.div-3  button {
-    border-radius: 2px;
+.design  button {
+    border-radius: 0.1rem;
     border-style: none;
     background-color:rgb(17, 167, 134);
     margin-top: 2rem;
@@ -181,88 +190,107 @@ header ul {
     text-transform: uppercase;
     font-family: nunito;
     color: white;
-    letter-spacing: 1px;
+    letter-spacing: 0.1rem;
     font-weight: bold;
 }
 
-.div-3 button:hover {
+.design button:hover {
     background-color: rgba(17, 167, 134, 0.5);
     color: rgb(255, 255, 255);
     cursor: pointer;
 }
-.div-4 {
-    width: 100%;
-    height: 50vh;
+.community {
     background-color: #f7f7f7;
     display: flex;
-}
-
-#div1 {
-    text-align: center;
-    padding: 5rem 3rem 0 3rem;
-}
-
-#div1 figure, h3, p {
-    margin-top: 1rem;
-}
-
-#div1, #div2, #div3 {
-    display: block;
-    width: 30%;
-    height: 50vh;
-    margin-left: 1rem;
-}
-
-#div2, #div3 {
-    padding-top: 2rem;  
-}
-
-#div2 img, #div3 img {
+    height: 25rem;
+    justify-content: space-around;
     width: 100%;
-    transition: transform 0.1s;
 }
 
-#div2 img:hover {
-    transform: scale(1.1);
+.community #div1, #div2, #div3 {
+    width: 33%;
 }
 
-#div3 img:hover {
-    transform: scale(1.1);
-}
-
-.div-4 h3 {
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.div-4 p {
-    letter-spacing: 1px;
-}
-
-.div-5 {
-    background: url("https://i.ibb.co/wWgXTK7/newsletter-bg.png") no-repeat center;
-    background-size:cover;
-    width: 100%;
-    height: 100vh;
+.community #div1 {
+    height: 20rem;
+    margin: auto;
     text-align: center;
-    color: rgb(255, 255, 255);
+    padding: 5rem 0 0 8rem;
+ }
+
+ .community h2 {
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    margin: 1rem 0;
 }
 
-.div-5 h3 {
-    font-size: 2rem;
-    text-transform: uppercase;
-    padding-top: 20rem;
+.community p {
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
+}
+
+#div2{
+    display: flex;
+    justify-content: right;
+    align-items:center;
+    padding-right: 1rem;
+}
+
+#div2 figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 2s;
+    overflow: hidden;
+}
+
+#div2 figure:hover img{
+    transform: scale(1.3);
+    transition-duration: 5s;
+}
+
+#div3{
+    display: flex;
+    justify-content: left;
+    align-items:center;
+    padding-left: 1rem;
+}
+
+#div3 figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 2s;
+    overflow: hidden;
+}
+
+#div3 figure:hover img{
+    transform: scale(1.3);
+    transition-duration: 5s;
 }
 
 form {
-    width: 50%;
-    margin: 0 auto;
-}
-
-.subscribe {
-    height: 60px;
+    background: url("https://i.ibb.co/wWgXTK7/newsletter-bg.png") no-repeat center;
+    background-size:cover;
     display: flex;
     justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 45rem;
+    color: rgb(255, 255, 255);
+}
+
+#wrapper{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+#subscribe {
+    height: 60px;
+    display: flex; 
+    display: flex;
+    justify-content: center;  
 }
 
 .ion-icon {
@@ -289,12 +317,12 @@ form {
     text-align: center;
 }
 
-.subscribe:hover > #email,#email:focus {
+form #subscribe:hover > #email,#email:focus {
     width: 260px;
     padding: 0 10px;
 }
 
-.submit {
+form .submit {
     background: rgb(17, 167, 134);
     border-radius: 0 3px 3px 0;
     color: rgb(255, 255, 255);
@@ -305,7 +333,7 @@ form {
     padding-left: 4px;
 }
 
-.div-5 ion-icon {
+form ion-icon {
     font-size: 3rem;
     height: 60px;
     display: flex;
@@ -314,7 +342,7 @@ form {
     outline: none;
 }
 
-.div-6 {
+.download {
     width: 100%;
     height: 50vh;
     background-color: #f7f7f7;
@@ -322,19 +350,21 @@ form {
     padding: 5rem 5rem 0 5rem;
 }
 
-.div-6 h3 {
+.download h2 {
     text-transform: uppercase;
     width: 60%;
     margin: 0 auto;
 }
 
-.div-6 p {
+.download p {
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
     padding: 0 5rem 0 5rem;
     width: 60%;
-    margin: 1rem auto;
+    margin: 2rem auto;
 }
 
-.download {
+#download {
     display: flex;
     height: 40px;
     justify-content: center;
@@ -403,6 +433,7 @@ footer h3 {
 .p {
     width: 50%;
     padding-left: 5rem;
+    margin-top: 1rem;
 }
 
 .logo-img {
@@ -419,25 +450,150 @@ footer p {
     font-weight: bold;
 }
 
-@media (max-width: 1125px;){
-    .second{
-        width: 80%;
-    }
-}
-
-@media (max-width: 985px;){
-    .second{
-        width: 60%;
-    }
-}
-
-@media (max-width: 795px;){
-    .second{
-        width: 40%;
-        font-size: calc(-1.5em);
+@media only screen and (width: 280px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-size: 6px;
     }
 
-    h3 {
-        font-size: calc(-1.5em);
+    header{
+        height: auto;
+    }
+
+    header .text{
+        font-size: 1.5rem;
+        font-weight: normal;
+    }
+
+    header img{
+        width: 4rem;
+    }
+
+    .content-main p{
+        font-size: 2rem;
+    }
+
+    .header-icons i{
+        font-size: 3rem;
+        letter-spacing: 3rem;
+    }
+
+    .content-main{
+        width: 90%;
+        margin: 10rem auto;
+    }
+
+    .content h2{
+        font-size: 1rem;
+    }
+
+    .content p{
+        font-size: 1.5rem;
+        font-weight: bold;
+        height: auto;
+        color: rgb(255, 255, 255);
+        line-height: 2rem;
+        margin: 2rem 0;
+    }
+
+    .represent{
+        height: auto;
+        width: 280px;
+        height: 400px;
+        background: rgb(0, 0, 0) url("https://i.ibb.co/hWXDDdF/hand-with-iphone.png");
+        background-size:65%;
+        background-position: 0% 30%;
+        background-repeat: no-repeat;  
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        padding: 2rem 0;        
+    }
+
+    .represent .content{
+        margin: 0 auto;
+        width: 90%;
+        height: auto;
+    }
+
+    .represent h2{
+        color: rgb(255, 255, 255);
+        width: 100%;
+        font-size: 2rem;
+        margin-bottom: 20rem;
+    }
+
+    .represent p{
+        color: rgb(255, 255, 255);
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+        line-height: 2.2rem;
+        width: 100%;
+    }
+
+    .represent button{
+        width: 15rem;
+        height: 4rem;
+    }
+
+    .design{
+        height: auto;
+        width: 280px;
+        height: 400px;
+        background: rgb(0, 0, 0) url("https://i.ibb.co/2jJwRTf/iphone-5c-flat.png");
+        background-size:65%;
+        background-position: 50% 30%;
+        background-repeat: no-repeat;  
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        padding: 2rem 0;               
+    }
+
+    .design .content{
+        margin: 0 auto;
+        width: 90%;
+        height: auto;
+    }
+
+    .design h2{
+        color: rgb(255, 255, 255);
+        width: 100%;
+        font-size: 2rem;
+    }
+
+    .design p{
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+        line-height: 2.2rem;
+        padding: 0 1rem;
+    }
+
+    .design button{
+        width: 15rem;
+        height: 4rem;
+    }
+
+    .community {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        width: 280px;
+    }
+
+    .community #div1, #div2, #div3{
+        width: 90px;
+    }
+
+    .community #div3{
+        float: right;
+    }
+
+    .community img{
+        width: 10rem;  
     }
 }

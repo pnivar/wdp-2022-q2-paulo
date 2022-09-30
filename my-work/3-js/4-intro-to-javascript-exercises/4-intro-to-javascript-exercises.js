@@ -9,7 +9,7 @@ console.log(midRange());
 // Ex. 2
 function area_circle(radius) {
 let area_circle;
-let pie = 3.14
+let pie = Math.PI
 area_circle = pie * radius * radius
 console.log(area_circle);
 }
@@ -64,13 +64,7 @@ console.log(xor('', 'World!'));
 
 //Ex. 7
 function equals(val1, val2) {
-    if(val1 === val2) {
-        return true;
-    }
-
-    else {
-        return false;
-    }
+    return val1 === val2;       
 }
 
 console.log(equals(3, 4));
@@ -78,13 +72,7 @@ console.log(equals(3, 4));
 
 // Ex. 8
 function equals(val1, val2, val3) {
-    if(val1 === val2 && val3) {
-        return true;
-    }
-
-    else {
-        return false;
-    }
+    return val1 === val2 === val3
 }
 
 console.log(equals(1,2,1));
@@ -92,13 +80,7 @@ console.log(equals(1,2,1));
 
 // Ex. 9
 function isThreeDigit(num) {
-    if(num >= 100 && num < 1000) {
-        return true;
-    }
-
-    else {
-        return false;
-    }
+    return num >= 100 && num < 1000;
 }
 
 console.log(isThreeDigit(99));
@@ -106,55 +88,82 @@ console.log(isThreeDigit(99));
 
 // Ex. 10
 function isEven(num1, num2) {
-    if(num1 % num2 == 0) {
-        return true;
-    }
-
-    else {
-        return false;
-    }
+    return num1 % num2 === 0
 }
 
 console.log(isEven(8,4));
 
 
 // Ex. 11
-function fizzBuzz(num) {
-    const FIZZ = 'Fizz';
-    const BUZZ = 'Buzz';
-    const FIZZ_BUZZ = 'Fizz Buzz'
+function fizzBuzz() {
     for(let i = 1; i <= 100; i++) {
-        if(num % 3 === 0 && num % 5 === 0) {
-            return FIZZ_BUZZ;
+        if(i % 3 === 0 && i % 5 === 0) {
+            console.log('Fizz Buzz');
         }
 
-        else if(num % 3 === 0) {
-            return FIZZ;
+        else if(i % 3 === 0) {
+            console.log('Fizz');
         }
 
-        else if(num % 5 === 0) {
-            return BUZZ;
+        else if(i % 5 === 0) {
+            console.log('Buzz');
         }
 
         else {
-            return i;
+            console.log(i);
         }
     }
 }
 
-console.log(fizzBuzz());
+fizzBuzz();
 
 
 // Ex. 12
 function toArray(val1, val2) {
-    let arrey = [val1, val2];
-    return arrey;
+    let array = [val1, val2];
+    return array;
 }
 
 console.log(toArray(5,9));
-*/
 
 // Ex. 13
-function setFirstElement([], num) {
-    return []
+    function setFirstElement(toArray,aVarr){
+        toArray[0] = aVarr;
+    }
+
+    console.log(setFirstElement(4,2,3,1));
+
+    // Ex. 13
+function setFirstElement(someArr, someVar){
+    someArr.unshift(someVar);
+    return someArr;
 }
+console.log( setFirstElement([1,2,3,4,5], 8) );
+
+// Ex. 14
+function sort(someArr){
+    someArr.sort();
+    return someArr;
+}
+
+console.log(sort([9,3,4,1,2,8,6,7,5]));
+*/
+
+// Ex. 15
+function rotateArr(arr, numOfRotations){
+    for (let i = 0; i < numOfRotations; i++) {
+        arr.push(arr.shift())
+        console.log(arr);
+    }
+}
+
+rotateArr([9,8,7,6,5,4,3,2,1], 9);
+
+
+function countDown(num){
+    if(num === 0) return;
+    console.log(num)
+    countDown(num - 1)
+}
+
+countDown(10);

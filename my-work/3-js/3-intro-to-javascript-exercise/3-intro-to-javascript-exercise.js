@@ -1,37 +1,27 @@
 /*
 // Ex. 1
-function printHello() {
-    console.log('Hello World!')
-}
+const printHello = () => 
+    console.log('Hello World!');
+
 
 printHello();
 
 // Ex. 2
-function getHello() {
-    return "Hello World!"
-}
-
-getHello();
+const getHello = () => "Hello World!"
 
 console.log(getHello());
 
 //Ex. 3
-function a() {
-    return "Hello a!"
-}
+const a = () => 'Hello a!'
 
 console.log(a());
 
-function b() {
-    return "Hello b!"
-}
+const b = () => 'Hello b!'
 
 console.log(b());
 
 //Ex. 4
-function greet() {
-    return "Haydo!"
-}
+const greet = () => 'Haydo!'
 
 const salutation = greet();
 
@@ -42,50 +32,39 @@ function hello() {
     return 'Hi!';
   }
   
-  let x = hello(); //x = Hi!
-
+  let x = hello(); // x will assume the value of function hello which is equal to the string literal 'Hi!', therefore x = 'Hi!'
+  
   //Ex. 6
-  function echo(param1 = 'Greta ', param2 = 'CO2') {
-    return param1 + param2
-  }
+  const echo = param => param;
 
-  console.log(echo());
+  console.log(echo('CO2'));
 
-
+  
   //Ex. 7
   function reply(phrase) {
     return phrase;
   }
   
-  let x = reply('How do you do?'); // x = How do you do?
+  let x = reply('How do you do?'); // // x will assume the value of function reply which is equal to the string literal 'How do you do?', therefore x = 'How do you do?' x = 'How do you do?'
 
   console.log(x);
   
 
   //Ex. 8
+const greet = param => 'Hello ' + param + '!';
 
-  function greet(name) {
-    return 'Hello ' + name + '!'
-  }
-
-console.log(greet('Ada'));
+console.log(greet('Paulo'));
 
 
 //EX. 9
-function whereIs(name) {
-    return 'Where is ' + name + '?';
-  }
+const whereIs = name => 'Where is ' + name + '?';
   
   let x = whereIs('Jacky'); // x = where is Jacky?
 
   console.log(x);
   
-
-
 //Ex. 10
-function hi(name) {
-    return 'Hi ' + name + '!';
-  }
+const hi = name => 'Hi ' + name + '!';
   
   let h1 = hi('Selva');
   let h2 = hi('Pola');
@@ -95,17 +74,13 @@ function hi(name) {
   
 
   //Ex. 11
-  function shout(name) {
-    return name + name
-  }
-
-  console.log(shout('Ada'));
+  const shout = name =>  name + name
+  
+  console.log(shout('Fire'));
 
 
 //Ex. 12
-function double(name) {
-    return name + ' and ' + name;
-  }
+const double = name => name + ' and ' + name;
   
   let x = double('Roy'); // x = Roy and Roy
 
@@ -113,33 +88,48 @@ function double(name) {
 
 
 //Ex. 13
-function length(param) {
-    return param.length
-}
+const length = param => param.length
 
 console.log(length('Hello'));
 
-
 // Ex. 14
-function toCase(param) {
-    return param.toLowerCase() + '-' + param.toUpperCase()
-}
+const toCase = param => param.toLowerCase() + '-' + param.toUpperCase();
 
 console.log(toCase('hello'));
 
-
 // Ex. 15
-function shortcut(str1, str2) {
-    return str1[0] + str2[0]
-}
+const shortcut = (str1, str2) => str1[0] + str2[0];
 
 console.log(shortcut('Peanut', 'Butter'));
 
 
 // Ex. 16
-function firstChar(str) {
-    return str.trim()[0]
-}
+const firstChar = (str) => str.trim()[0];
 
 console.log(firstChar(' Hello'));
 
+
+// Ex. 17
+const indexOfIgnoreCase = (param1, param2) => {
+  let str1 = param1;
+  let str2 = param2;
+  firstOccurrance = str2[0];
+  return str1.indexOf(firstOccurrance);  
+}
+
+console.log(indexOfIgnoreCase('bit', 'it'));
+
+
+// Ex. 18
+function flipSign(num){
+  if(num > 0){
+    return Math.sign(-num) * num
+  }
+
+  else{ 
+    return Math.sign(+num) * num
+  }
+}
+
+console.log(flipSign(-6));
+*/

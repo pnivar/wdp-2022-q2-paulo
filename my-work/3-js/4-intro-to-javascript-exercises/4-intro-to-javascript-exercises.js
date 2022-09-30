@@ -1,20 +1,13 @@
 /*
 // Ex. 1
-function midRange(arr = [3,9,1]) {
-    return (Math.max(...arr) + Math.min(...arr)) / 2
-}
+const midRange = arr => (Math.max(...arr) + Math.min(...arr)) / 2;
 
-console.log(midRange());
+console.log(midRange([3,9,1]));
 
 // Ex. 2
-function area_circle(radius) {
-let area_circle;
-let pie = Math.PI
-area_circle = pie * radius * radius
-console.log(area_circle);
-}
+const areaOfCircle = radius => Math.PI * Math.pow(radius, 2);
 
-area_circle(5);
+console.log(areaOfCircle(5));
 
 //Ex.3 
 function add(num) {
@@ -148,16 +141,19 @@ function sort(someArr){
 
 console.log(sort([9,3,4,1,2,8,6,7,5]));
 */
-
-// Ex. 15
-function rotateArr(arr, numOfRotations){
-    for (let i = 0; i < numOfRotations; i++) {
-        arr.push(arr.shift())
-        console.log(arr);
-    }
+// Ex. 15 rotate
+const rotateArr = (param, rotations) => {
+    for (let i = 0; i < rotations; i++)
+    param.push(param.shift());
+    const rotatedArray = param;
+    return rotatedArray;
 }
+console.log(rotateArr([9,8,7,6,5,4,3,2,1],3)); // Array will rotate counter clock wise by the amount of rotation specified by argument[1].
+/*
+// Ex. 15 reverse
+const reverseArr = arr => arr.reverse();
 
-rotateArr([9,8,7,6,5,4,3,2,1], 9);
+console.log(rotateArr([9,8,7,6,5,4,3,2,1])); // Array will be reverse in the opposite direction.
 
 
 function countDown(num){
@@ -167,3 +163,4 @@ function countDown(num){
 }
 
 countDown(10);
+*/

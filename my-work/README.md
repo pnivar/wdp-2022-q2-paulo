@@ -11,3 +11,4 @@ Hover edit commit to div-1 and div-4 sections on Sep 16, 2022 1:40 PMEDT.
 intro-to-javascript-exercise-2 commit on Sep 16, 2022 5:40 PM EDT.
 Javascript exercises commit on Sep 26, 2022 10:22 AM EDT.
 edit commit to javascript exercises on Sep 29, 2022 09:41 PM EDT.
+edit commit to javascript exercises on Sep 30, 2022 05:38 PM EDT.

@@ -23,5 +23,5 @@ const groceryList = ['apples', 'oranges', 'bananas', 'pears', 'lemons'];
 const groceryPrices = ['$0.50', '$0.75','$0.95','$0.50','$0.89'];
 
 for (let i = 0; i < groceryList.length; i++) {
-    console.log(groceryList[i] + " " + groceryPrices[i]);
+    console.log(groceryList[i] + ", " + groceryPrices[i]);
 }

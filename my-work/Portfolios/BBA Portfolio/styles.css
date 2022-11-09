@@ -1,0 +1,437 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black: rgb(0, 0, 0);
+    --red: rgb(250, 6, 6);
+    --red2: rgb(255, 99, 71);
+    --red_transt: rgba(250, 6, 6, 0.5);
+    --red_transt__2: rgba(250, 6, 6, 0.1);
+    --blue: rgb(155, 255, 255);
+    --blue__transt: rgba(155, 255, 255, 0.1);
+    --blue2: rgb(50, 50, 255);
+    --white: rgb(255, 255,255);
+    --white_transt: rgba(255, 255, 255, 0.03);
+    --white_transt2: rgba(255, 255, 255, 0.5);
+    --white_transt3: rgba(255, 255, 255, 0);
+    --gold: rgb(218, 165, 32);
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background: url(https://i.ibb.co/kxv2Km4/black-texture.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+hr {
+    border: 0.01rem solid var(--red_transt);
+    margin: 1rem;
+}
+
+h3 {
+    background-color: var(--white_transt);
+    color: var(--blue);
+    display: flex;
+    font-size: 3.5rem;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    width: 99%;
+}
+
+header {
+    background: url(https://i.ibb.co/kxv2Km4/black-texture.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: var(--red_transt);
+    font-size: 6rem;
+    font-weight:900;
+    text-align: center;  
+}
+
+#p1 {
+    color: var(--blue);
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: -5.8rem;
+    letter-spacing: 0.2rem;
+}
+
+#p2 {
+    border-top: 0.1rem solid var(--blue);
+    color: var(--blue);
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1rem;
+    text-align: center;
+    margin: 1rem auto;
+    text-transform: uppercase;
+    width: 35%;
+}
+
+#navbar {
+    background-color: var(--white_transt);
+    font-family: 'Playfair Display', serif;
+    width: 99%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar nav {
+    margin-bottom: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
+#navbar ul {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    position: relative;
+}
+
+#navbar li {
+    list-style-type: none;
+    margin: 0 1.5rem;
+}
+
+#navbar a {
+    color: var(--blue);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    position: relative;
+    text-align: center;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+#navbar a:hover {
+    color: var(--blue);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    transition-delay: 0s;
+    text-shadow: 0 0 10px var(--blue), 0 0 30px var(--blue), 0 0 80px var(--blue);
+}
+
+#banner {
+    background: url(https://i.ibb.co/kxv2Km4/black-texture.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#banner__container {
+    background-color: var(--white_transt);
+    width: 99%;
+    margin: 0 auto;
+    padding: 10rem 0;
+}
+
+#greetings {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: var(--blue);
+    font-size: 8rem;
+    text-align: center;
+    background: linear-gradient(
+        to right, 
+        rgba(101, 7, 7, 0), 
+        rgba(228, 9, 9, 0.5), 
+        rgba(249, 4, 4, 0.9)
+        );
+    -webkit-background-clip: text;  
+    -webkit-text-fill-color: transparent;
+    animation: shine 15s infinite linear;
+}
+
+
+@keyframes shine {
+    0%{background-position: 0;}
+    60%{background-position: 600px;}
+    100%{background-position: 1440px;}
+}
+
+#hello, #welcome {
+    color: var(--red_transt);
+    border-bottom: 0.1rem solid var(--blue);
+}
+
+#icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    right: 45%;
+    bottom: 5;
+}
+
+#icons ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+#resume {
+    text-align: center;
+}
+
+#resume #download__resume {
+    background-color: var(--white_transt);
+    border: 0.1rem solid var(--red_transt);
+    color: var(--red);
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    border-radius: 1rem;
+    letter-spacing: 0.2rem;
+    padding: 0.5rem;
+    animation: blink 2s linear infinite;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+#resume #download__resume:hover {
+    background-color: var(--white_transt);
+    border: 0.1rem solid var(--blue);
+    color: var(--blue);
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 1rem;
+    letter-spacing: 0.2rem;
+    padding: 0.5rem;
+    transition-delay: 0s;
+    text-shadow: 0 0 10px var(--blue), 0 0 30px var(--blue), 0 0 80px var(--blue);
+}
+
+#icons li {
+    margin: 0.5rem;
+}
+
+#icons a {
+    width: rem;
+}
+
+#icons i {
+    border: 0.1rem solid var(--red_transt);
+    border-radius: 50%;
+    color: var(--red_transt);
+    font-size: 1rem;
+    padding: 0.5rem;
+    animation: blink 2s linear infinite;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+@keyframes blink{
+    0%{opacity: 0;}
+    50%{opacity: 0.5;}
+    100%{opacity: 1;}
+}
+   
+#icons i:hover {
+    border: 0.1rem solid var(--blue);
+    border-radius: 50%;
+    color: var(--blue);
+    font-size: 1rem;
+    transition-delay: 0s;
+    text-shadow: 0 0 10px var(--blue), 0 0 30px var(--blue), 0 0 80px var(--blue);
+}
+
+#about__container {
+    background-color: var(--white_transt);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 2rem;
+    width: 99%;
+}
+
+#about__container--left, #about__container--right {
+    background-color: var(--white_transt);
+    border-radius: 1rem;
+    border: 0.01rem solid var(--blue);
+    color: var(--blue);
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 0.1rem;
+    padding: 1rem;
+    text-align: center;
+    width: 99%;
+    margin: 2rem auto;
+}
+
+#about__container--left {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+#about__container--right {
+    font-size: 2rem;
+    font-weight:lighter;
+}
+
+#skills {
+    background-color: var(--white_transt);
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+#skills div {
+    width: 25%;
+    border: 1px solid red;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+#skills i {
+    background-color: var(--red_transt);
+    font-size: 20rem;
+}
+
+#skills #html i {
+    background-color: var(--white);
+    color: var(--red2);
+}
+
+#skills #css i {
+    background-color: var(--blue2);
+    color: var(--white);
+}
+
+#skills #js i {
+    background-color: var(--black);
+    color: var(--gold);
+}
+
+#projects {
+display: grid;
+grid-template-columns: 6fr 3fr 3fr ;
+gap: 1rem;
+grid-auto-rows: 20rem;
+width: 99%;
+margin: 0 auto;
+
+}
+
+.project {
+background: red;
+color: aqua;
+font-size: 2rem;
+padding: 1rem;
+border: 1px solid blue;
+}
+
+#project1 {
+    background-color: blue;
+    width: 40rem;
+}
+
+#project2 {
+background-color: brown;
+}
+#project3 {
+background-color: aqua;
+}
+#project4 {
+background-color: blueviolet;
+}
+
+.bg__modal {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white_transt2);
+    position: absolute;
+    top: 0;
+}
+
+.bg__modal--content {
+    background: url(https://i.ibb.co/d6kS4qv/Resume.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50%;
+    height: 95%;
+    padding: 1rem;
+    position: relative;
+}
+
+.bg__modal--content #download {
+    background-color: var(--white_transt);
+    border: 0.1rem solid var(--red_transt);
+    color: var(--red);
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bolder;
+    border-radius: 1rem;
+    letter-spacing: 0.2rem;
+    padding: 0.5rem;
+    bottom: 0;
+    right: 40%;
+    margin-bottom: 0.2rem;
+    padding: 0.5rem;
+    position: absolute;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.bg__modal--content #download:hover {
+    background-color: var(--white_transt);
+    border: 0.1rem solid var(--red);
+    color: var(--black);
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 1rem;
+    letter-spacing: 0.2rem;
+    padding: 0.5rem;
+}
+
+#close {
+    background-color: var(--white_transt3);
+    border: none;
+    color: var(--red);
+    cursor: pointer;
+    font-size: 5rem;
+    right: 5%;
+    margin-bottom: 0.2rem;
+    padding: 0.5rem;
+    position: absolute;
+    transform: rotate(45deg);
+    top: 0;
+}

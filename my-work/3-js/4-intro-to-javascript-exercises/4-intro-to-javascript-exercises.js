@@ -10,9 +10,8 @@ const areaOfCircle = radius => Math.PI * Math.pow(radius, 2);
 console.log(areaOfCircle(5));
 
 //Ex.3 
-function add(num) {
-    return Number.parseInt(num) + Number.parseInt(num)
-}
+let add = num => Number.parseInt(num) + Number.parseInt(num);
+
 
 console.log(add('78'));
 
@@ -140,16 +139,16 @@ function sort(someArr){
 }
 
 console.log(sort([9,3,4,1,2,8,6,7,5]));
-*/
+
 // Ex. 15 rotate
-const rotateArr = (param, rotations) => {
+const rotateArr = (array, rotations) => {
     for (let i = 0; i < rotations; i++)
-    param.push(param.shift());
-    const rotatedArray = param;
+    array.push(array.shift());
+    const rotatedArray = array;
     return rotatedArray;
 }
-console.log(rotateArr([9,8,7,6,5,4,3,2,1],3)); // Array will rotate counter clock wise by the amount of rotation specified by argument[1].
-/*
+console.log(rotateArr([9,8,7,6,5,4,3,2,1],1)); // Array will rotate counter clock wise by the amount of rotation specified by argument[1].
+
 // Ex. 15 reverse
 const reverseArr = arr => arr.reverse();
 
@@ -163,4 +162,117 @@ function countDown(num){
 }
 
 countDown(10);
+
+
+// Ex. 16
+function add (array, item) {
+    if (array.includes(item)) {
+        return array;
+    }
+        array.push(item);
+        return array;
+}
+console.log(add([1, 2, 3, 4, 5], 6));
+
+
+// Ex. 17
+function concatUp (array1, array2) {
+    
+        if (array1.length === array2.length) {
+        array1.push(...array2);
+        return array1;
+        } else if (array1.length > array2.length) {
+        array1.unshift(...array2);
+        return array1;
+        } else if (array1.length < array2.length) {
+        array2.unshift(...array1);
+        return array2;
+        } else {
+        console.log('Please check your input');
+        }
+}    
+
+console.log(concatUp([1, 2, 3, 4],[6, 7, 8, 9, 10]));
+
+// Ex. 18
+function halve(array) {
+    let arrayCopy;
+    arrayCopy = array.filter(array => array % 2 !== 0);
+    return arrayCopy
+}
+
+console.log(halve([1,2,3,4,5,6,7,8,9,10]));
+
+
+// Ex. 19
+function list(array){
+   
+    let prevToLastItems = array.slice(0,-1).join(', ');
+    let lastItem = array.slice(-1).join();
+    if(array.length === 0){
+        return '""';
+   } return `"${prevToLastItems} and ${lastItem}."`;
+   
+}
+    
+
+console.log(list(["Huey", "Dewey", "Louie"]));
+
+
+// Ex. 20
+function hello(param){
+    if(param){
+        return 'Hello ' + param;
+    } return 'Hello World';
+}
+
+console.log(hello('Paulo'));
+
+*/
+// Ex. 21
+function factorial(num){
+let answer = num ** 2;
+return answer;
+}
+
+console.log(factorial(3));
+
+/*
+// Ex. 22
+function spaces(num){
+
+}
+
+
+// Ex. 23
+function lcm(){
+
+}
+
+
+// Ex. 24
+function isPrime(){
+
+}
+
+
+// Ex. 25
+window.onload = function(){
+    let name = document.querySelector("#text-box");
+    let answer = document.querySelector(".answer");
+    let submit = document.querySelector(".submit");
+
+    submit.onclick = function greeting(name){
+
+    function yourName(name){
+        if(name){
+          answer = 'You name is: ' + name;
+          return answer;
+        } answer = 'did you type your name?'
+        return answer;
+    }
+
+    console.log(yourName(name));
+}
+}
 */

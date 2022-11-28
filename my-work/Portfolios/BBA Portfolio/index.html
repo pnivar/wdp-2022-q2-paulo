@@ -16,6 +16,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
     <script
       src="https://kit.fontawesome.com/20324efe27.js"
       crossorigin="anonymous"
@@ -23,124 +27,71 @@
     <script src="./portfolio.js"></script>
   </head>
   <body>
-    <header>
-      <h1>PN</h1>
-      <p id="p1">Paulo Nivar</p>
-      <p id="p2">web developer</p>
-      <div id="navbar">
-        <nav>
-          <ul>
-            <li><a href="#" data-text="Home">Home</a></li>
-            <li><a href="#" data-text="About">About Me</a></li>
-            <li><a href="#" data-text="Skills">Skills</a></li>
-            <li><a href="#" data-text="Projects">Projects</a></li>
-            <li><a href="#" data-text="Contact">Contact</a></li>
-          </ul>
-        </nav>
+    <header class="header">
+      <div class="logo">
+        <div id="initials"><p>PN</p></div>
+        <div id="name"><p>Paulo Nivar</p></div>
+        <div id="proffession"><p>Front-end web developer</p></div>
       </div>
+      <nav class="nav">
+        <ul>
+          <li><a class="nav__link active" href="#banner" data-text="Home">Home</a></li>
+          <li><a class="nav__link" href="#about__me" data-text="About">About Me</a></li>
+          <li><a class="nav__link" href="#" data-text="Skills">Skills</a></li>
+          <li><a class="nav__link" href="#Projects" data-text="Projects">Projects</a></li>
+          <li><a class="nav__link" href="#" data-text="Contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
-    <div id="banner">
-      <div id="banner__container">
+    <div class="banner" id="banner">
+      <div class="banner__container">
         <h2 id="greetings">
-          <span id="hello">Hello!</span> and <span id="welcome">Welcome</span>
+          <span class="letter">H</span>
+          <span class="letter">e</span>
+          <span class="letter">l</span>
+          <span class="letter">l</span>
+          <span class="letter">o</span>
+          <span class="letter">!</span>
+          <span class="letter splitter">&</span>
+          <span class="letter">W</span>
+          <span class="letter">e</span>
+          <span class="letter">l</span>
+          <span class="letter">c</span>
+          <span class="letter">o</span>
+          <span class="letter">m</span>
+          <span class="letter">e</span>
         </h2>
-        <div id="icons">
-          <ul>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/paulo-nivar-bb6482181"
-                target="_blank"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
-            </li>
-            <li>
-              <div id="resume">
-                <button id="download__resume" type="button">resume</button>
-              </div>
-            </li>
-            <li>
-              <a
-                href="https://github.com/pnivar?tab=repositories"
-                target="_blank"
-              >
-                <i class="fa-brands fa-github"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
       </div>
     </div>
     <hr />
-    <div id="about">
-      <h3>About Me</h3>
-      <div id="about__container">
-        <p id="about__container--left">
-          A United States Marine Corps veteran transitioning from the
-          Transportation and Logistics Industry onto the modern world of IT
-          and Computer Science.
+    <div class="about">
+      <div>
+        <h3 id="about__me">About me</h3>
+      </div>
+      <div>
+        <p class="about__me--top">
+        A United States Marine Corps veteran transitioning from the
+        Transportation and Logistics Industry onto the modern world of IT
+        and Computer Science.
         </p>
-        <p id="about__container--right">
+      </div>
+      <div class="about__image1">
+        <!-- image set as background in css -->
+      </div>
+      <div class="about__image2">
+        <!-- image set as background in css -->
+      </div>
+      <div>
+        <p class="about__me--bottom">
           "I’ve always had a passion for computers and how they function. Many
           years ago, I jumped into the world of computer as a PC enthusiast,
           assembling my own gaming computers. Today I am emerging myself deeper
           into the world of computers by starting my computer science journey as
-          a web developer."
+          a front-end web developer."
         </p>
       </div>
-    </div>
-    <hr />
-    <div id="about">
-      <h3>Skills</h3>
-      <div id="skills">
-        <div id="html"><i class="fa-brands fa-html5"></i></div>
-        <div id="css"><i class="fa-brands fa-css3-alt"></i></div>
-        <div id="js"><i class="fa-brands fa-js"></i></div>
+      <div class="skills">
+
       </div>
-    </div>
-    <hr />
-    <div id="about">
-      <h3>Projects</h3>
-      <div id="projects">
-        <div class="project">lorem20 1</div>
-        <div class="project">lorem20 2</div>
-        <div class="project">lorem20 3</div>
-        <div class="project">lorem20 4</div>
-        <div class="project">lorem20 5</div>
-        <div class="project">lorem20 6</div>
-        <div class="project">lorem20 7</div>
-        <div class="project">lorem20 8</div>
-        <div class="project">lorem20 9</div>
-      </div>
-    </div>
-    <hr />
-    <div id="about">
-      <h3>Contact</h3>
-      <div id="about__container">
-        <p id="about__container--left">
-          A United States Marine Corps veteran transitioning from the
-          Transportation and Logistics Industry onto the modern world of IT and
-          Computer Science.
-        </p>
-        <p id="about__container--right">
-          "I’ve always had a passion for computers and how they function. Many
-          years ago, I jumped into the world of computer as a PC enthusiast,
-          assembling my own gaming computers. Today I am emerging myself deeper
-          into the world of computers by starting my computer science journey as
-          a web developer."
-        </p>
-      </div>
-    </div>
-    <hr />
-    <div class="bg__modal">
-      <div class="bg__modal--content">
-        <a
-          id="download"
-          href="https://drive.google.com/uc?export=download&id=1--5Vz3pIXCblT5dtA9RaE0orApTDUz_N"
-          download=""
-          >download</a
-        >
-        <button id="close" type="button">+</button>
-      </div>
-    </div>
   </body>
 </html>

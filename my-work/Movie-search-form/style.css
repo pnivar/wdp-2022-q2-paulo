@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background: url('https://i.ibb.co/qxggkXW/Theater.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(57, 30, 30);
+    background-blend-mode: multiply;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: url('https://i.ibb.co/qxggkXW/Theater.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(134, 72, 72);
+    background-blend-mode: multiply;
+    width: 80%;
+    height: 80%;
+    border: 3px solid rgba(255, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: violet;
+}
+
+.form {
+border: 1px solid red;
+text-align: center;
+}
+
+.movie__title {
+    width: 100%;
+}
+
+.submit {
+    width: 25%;
+    margin-top: 1rem;
+}
+
+.year {
+    width: 50%;
+}
+
+input, button {
+    height: 2rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    gr
+}

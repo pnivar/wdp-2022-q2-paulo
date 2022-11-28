@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0093E9;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 3rem;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.wrapper {
+    border: 2px solid red;
+    display: flex;
+    margin-top: 2rem;
+}
+
+.children {
+    border: 2px solid white;
+    width: 10rem;
+    height: 10rem;
+}
+
+.children2 {
+    border: 2px solid white;
+    height: 10rem;
+    flex-grow: 1;
+}
+
+.wrapper3 {
+    border: 2px solid red;
+    display: flex;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.children3 {
+    border: 2px solid white;
+    height: 10rem;
+    flex-grow: 1;
+}
+
+.wrapper4 {
+    border: 2px solid red;
+    display: flex;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.children4 {
+    border: 2px solid white;
+    height: 10rem;
+    flex-grow: 1;
+}
+
+.children4:first-of-type {
+    flex-grow: 2;
+}
+
+.wrapper5 {
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.children5 {
+    border: 2px solid white;
+    height: 10rem;
+    width: 10rem;
+}
+
+.wrapper6 {
+    border: 2px solid red;
+    display: flex;
+    justify-content:center;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.children6 {
+    border: 2px solid white;
+    height: 10rem;
+    width: 10rem;
+}
+
+.wrapper7 {
+    border: 2px solid red;
+    display: flex;
+    margin-top: 2rem;
+    height: 40rem;
+}
+
+.children7 {
+    border: 2px solid white;
+    height: 30rem;
+    width: 10rem;
+}
+
+.children7:first-of-type {
+    height: 20rem;
+}
+
+.children7:last-of-type {
+    height: 10rem;
+}
+
+.wrapper8 {
+    border: 2px solid red;
+    display: flex;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.children8 {
+    border: 2px solid white;
+    height: 10rem;
+    flex-basis: 50%;
+}
+
+.children8:first-of-type {
+    flex-basis: 100%;
+
+}

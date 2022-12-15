@@ -19,6 +19,12 @@ body {
     align-items: center;
 }
 
+::placeholder {
+    color: rgba(255, 0, 0, 1);
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+}
+
 .container {
     background: url('https://i.ibb.co/qxggkXW/Theater.jpg');
     background-repeat: no-repeat;
@@ -36,26 +42,27 @@ body {
 }
 
 .form {
-border: 1px solid red;
 text-align: center;
 }
 
-.movie__title {
+.search__title {
     width: 100%;
 }
 
 .submit {
+    color: rgba(255, 0, 0, 1);
+    background-color: rgba(255, 255, 255, 0.7);
+    font-weight: bold;
     width: 25%;
     margin-top: 1rem;
 }
 
-.year {
+.min__year, .max__year {
     width: 50%;
 }
 
 input, button {
     height: 2rem;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.7);
     text-transform: uppercase;
-    gr
 }

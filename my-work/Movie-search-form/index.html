@@ -9,14 +9,16 @@
     <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <script src="./movie-search.js"></script>
 </head>
 <body>
     <div class="container">
-        <form class="form" action="">
-            <input class="movie__title" type="text" name="text-box" id="text-box" placeholder="Title">
-            <input class="year" type="number" name="min-year" id="min-year" minlength="1880" maxlength="2022" placeholder="Year"><input class="year" type="number" name="max-year" id="max-year" minlength="1880" maxlength="2022" placeholder="Year">
+        <form class="form" method="get" action="">
+            <input class="search__title" type="search" name="search-title" id="search-title" name="search-title" placeholder="Title">
+            <input class="min__year" type="number" name="min-year" id="min-year" minlength="1880" maxlength="2022" placeholder="Min Year"><input class="max__year" type="number" name="max-year" id="max-year" minlength="1880" maxlength="2022" placeholder="Max Year">
             <button class="submit" type="submit">Search</button>
         </form>
     </div>

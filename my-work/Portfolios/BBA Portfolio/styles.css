@@ -15,24 +15,60 @@
 }
 
 body {
+    height: 100vh;
+    overflow: hidden;
     font-family: 'Playfair Display', serif;
     background: url(https://i.ibb.co/kxv2Km4/black-texture.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    --nav-height: 8rem;
-    padding-top: var(--nav-height);
 }
 
-hr {
-    border: 0.01rem solid var(--red);
-    margin: 2rem 1rem;
+/* Scrolling border at top of the page.*/
+.scroll {
+    position: absolute;
+    height: 5px;
+    width: 0px;
+    background-color: var(--blue);
+    box-shadow: 0 0 10px var(--blue), 0 0 30px var(--blue), 0 0 80px var(--blue);
+    top: 0;
+    left: 0;
+    z-index: 2;
 }
 
-/* Header Section*/
+/* Div element that contains everything within the body.*/
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
 
-header {
+/* Section element representing each page. */
+.page {
+    min-width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    justify-content: center;
+    border-right: 0.1rem solid var(--blue);
+    border-left: 0.1rem solid var(--blue);
+}
+
+ .page--content {
+    width: 99%;
+    height: 75%;
+    z-index: 2;
+    margin-left: -96rem;
+    margin-top: 8rem;
+}
+
+/* Home Section page 1 */
+.header {
     border-bottom: 0.1rem solid var(--red);
+    box-shadow: 0 0 10px var(--blue), 0 0 30px var(--blue), 0 0 80px var(--blue);;
     background: url(https://i.ibb.co/kxv2Km4/black-texture.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -43,12 +79,8 @@ header {
     font-family: 'Playfair Display', serif;
     justify-content: center;
     align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: var(--nav-height);
-    transition: transform 0.9s;
+    position: fixed;
 }
 
 .logo #initials {
@@ -63,7 +95,7 @@ header {
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
-    margin-top: -4rem;
+    margin-top: -3.7rem;
     letter-spacing: 0.2rem;
 }
 
@@ -73,33 +105,28 @@ header {
     font-size: 0.7rem;
     font-weight: bold;
     letter-spacing: 0.1rem;
-    margin-top: 0.5rem;
+    margin-top: 0.6rem;
     text-align: center;
     text-transform: uppercase;
 }
 
-nav {
+.nav {
     margin-bottom: 1rem;
     width: 100%;
-    height: var(--nav-height);
     display: flex;
     justify-content: center;
     align-content: center;
 }
 
-nav ul {
+.nav ul {
     display: flex;
     flex-direction: row;
     margin-top: 1rem;
 }
 
-nav li {
+.nav li {
     list-style-type: none;
     margin: 0 1.5rem;
-}
-
-.nav--hidden {
-   transform: translateY(calc(-1 * var(--nav-height))); 
 }
 
 .nav__link {
@@ -124,31 +151,31 @@ nav li {
     letter-spacing: 0.2rem;
     transition-delay: 0s;
     text-shadow: 0 0 10px var(--blue), 0 0 30px var(--blue), 0 0 80px var(--blue);
-}
-
-.active {
     border-bottom: 0.1rem solid var(--blue);
 }
 
-/* Banner Section */
-
-.banner {
-    background: url('https://i.ibb.co/0M9DnXC/work-station.jpg');
-    background-color: tomato;
-    background-blend-mode: multiply;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.page__1 h3 {
+    width: 100%;
+    height: 100%;
+    color: var(--white_transt);
+    font-size: 18rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 4rem;
 }
 
-.banner__container {
-    background-color: var(--white_transt);
+.page__1--banner {
     width: 99%;
-    margin: 0 auto;
-    padding: 7.5rem 0;
+    height: 79%;
+    z-index: 2;
+    margin-left: -96rem;
+    margin-top: 9.4rem;
 }
 
-#greetings {
+.greetings {
     font-family: lato;
     display: flex;
     flex-direction: row;
@@ -157,6 +184,8 @@ nav li {
     color: var(--blue);
     font-size: 8rem;
     text-align: center;
+    height: 100%;
+    
 }
 
 .letter {
@@ -238,70 +267,299 @@ nav li {
     padding-right: 2rem;
 }
 
-/* About Me section */
-
-.about {
-    background-color: var(--white_transt);
-    margin: 0 auto;
-    width: 99%;
+/* About Me Section page 2*/
+.page__2 h3 {
+    width: 100%;
+    height: 100%;
+    color: var(--white_transt);
+    font-size: 18rem;
     display: flex;
-    flex-wrap: wrap;
-    height: 100vh;
-}
-
-.about div:first-of-type {
-    flex-basis: 100%;
-}
-
-.about div {
-    flex-basis: 50%;
-    height: 15rem;
-    border-top-right-radius: 2rem;
-    border-bottom-left-radius: 2rem;
-}
-
-.about div:first-of-type {
-    height: 6rem;
-}
-
-.about__image1, .about__image2 {
-    border: 1rem solid var(--blue);
-}
-
-.about h3 {
-    color: var(--blue);
-    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     text-transform: uppercase;
-    padding: 2rem;
-    flex-basis: 100%;
+    padding-top: 4rem;
 }
 
-.about p {
-    font-size: 1.4rem;
+.page__2--content {
     color: var(--blue);
+    font-size: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 99%;
+    height: 78%;
+    z-index: 2;
+    margin-left: -96rem;
+    margin-top: 9.5rem;
+}
+
+.Q1__text {
     text-align: center;
-    padding: 4rem;
+    padding: 2rem;
 }
 
-.about__image1 {
+.Q4__text {
+    text-align: center;
+    padding: 1.3rem;
+}
+
+.Q2__image--container, .Q3__image--container {
+    border: 0.2rem solid var(--blue);
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    width: 90%;
+    height: 90%;
+}
+
+.Q2__image--container {
     background: url('https://i.ibb.co/wKsD33v/Gaming-PC.jpg');
-    background-position: center;
-    background-size: cover;
     background-repeat: no-repeat;
-    width: 50%;
+    background-size: cover;
+    background-position: center;
 }
 
-.about__image2 {
+.Q3__image--container {
     background: url('https://i.ibb.co/x66ZHgH/Motor-Pool.jpg');
-    background-position: center;
-    background-size: cover;
     background-repeat: no-repeat;
-    width: 50%;
+    background-size: cover;
+    background-position: center;
 }
 
-/* Skills Section */
-
-.skills {
-
+.page__2--content div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+
+/* Skills Section page 3 */
+.page__3 h3 {
+    width: 100%;
+    height: 100%;
+    color: var(--white_transt);
+    font-size: 18rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 4rem;
+}
+
+.page__3--content {
+    color: var(--blue);
+    font-size: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    width: 99%;
+    height: 78%;
+    z-index: 2;
+    margin-left: -96rem;
+    margin-top: 9.5rem;
+}
+
+.top__text, .slide__show {
+    width: 100%;
+}
+
+.top__text {
+    height: 30%;
+    text-align: center;
+    padding: 1rem;
+}
+
+.slide__show {
+ height: 70%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.slides {
+    height: 100%;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    padding-bottom: 3rem;
+    animation: scrolling 60s linear infinite;
+    position: relative;
+}
+
+.slides img {
+    width: 15rem;
+}
+
+.slides:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scrolling {
+    0% {transform: translateX(0);}
+    100% {transform: translateX(-200%);}
+}
+
+.slide {
+    font-size: 10rem;
+    width: 25%;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+}
+
+/* Projects Section*/
+.page__4 h3 {
+    width: 100%;
+    height: 100%;
+    color: var(--white_transt);
+    font-size: 18rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 4rem;
+}
+
+.page__4--content {
+    color: var(--blue);
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 99%;
+    height: 78%;
+    z-index: 2;
+    margin-left: -96rem;
+    margin-top: 9.5rem;
+    text-align: center;
+}
+
+.row {
+    width: 100%;
+}
+
+.row__1, .row__3 {
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row__2, .row__4 {
+    height: 40%;
+}
+
+.row__2 img, .row__4 img {
+    width: 10rem;
+    margin-top: 5rem;
+}
+
+.row2:hover, .row4:hover {
+    animation-play-state: paused;
+}
+
+/* Contact Section page 5*/
+.page__5 h3 {
+    width: 100%;
+    height: 100%;
+    color: var(--white_transt);
+    font-size: 18rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 4rem;
+}
+
+.page__5--content {
+    display: flex;
+    width: 99%;
+    height: 78%;
+    z-index: 2;
+    margin-left: -96rem;
+    margin-top: 9.5rem;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.contact__container {
+    width: 90%;
+    height: 90%;
+}
+
+.input__group {
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 1rem;
+    outline: 0;
+    border: 0.1rem solid var(--blue);
+    color: var(--blue);
+    background-color: var(--white_transt);
+    font-size: 1rem;
+}
+
+textarea {
+    width: 100%;
+}
+
+label {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0.5rem;
+    color: var(--blue);
+    cursor: text;
+    transition: 0.2s;
+}
+
+button {
+    padding: 0.5rem 0;
+    color: var(--blue);
+    background-color: var(--white_transt);
+    border: 0.1rem solid var(--blue);
+    width: 100%;
+    cursor: pointer;
+}
+
+input:focus~label, textarea:focus~label,
+input:valid~label, textarea:valid~label {
+    top: -2rem;
+    font-size: 1rem;
+}
+
+.row1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.row2, .row3 {
+    flex-basis: 48%;
+}
+
+
+
+
+
+
+
+
+
+
+
+ 

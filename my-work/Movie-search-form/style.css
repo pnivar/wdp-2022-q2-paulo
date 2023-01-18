@@ -1,68 +1,31 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+form {
+}
+#search-results {
+  margin-top: 25px;
+}
+.search-result {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 10px;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-    width: 100vw;
-    height: 100vh;
-    background: url('https://i.ibb.co/qxggkXW/Theater.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-color: rgb(57, 30, 30);
-    background-blend-mode: multiply;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#results-spinner {
+  margin-top: 10px;
+  display: none;
+  font-size: 26px;
+  color: rgb(0, 115, 255);
+  animation: rotation 1.5s infinite linear;
 }
-
-::placeholder {
-    color: rgba(255, 0, 0, 1);
-    font-weight: bold;
-    letter-spacing: 0.1rem;
+.results-spinner--show {
+  /* use important to guarantee this value gets set */
+  display: inline-block !important;
 }
-
-.container {
-    background: url('https://i.ibb.co/qxggkXW/Theater.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-color: rgb(134, 72, 72);
-    background-blend-mode: multiply;
-    width: 80%;
-    height: 80%;
-    border: 3px solid rgba(255, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: violet;
-}
-
-.form {
-text-align: center;
-}
-
-.search__title {
-    width: 100%;
-}
-
-.submit {
-    color: rgba(255, 0, 0, 1);
-    background-color: rgba(255, 255, 255, 0.7);
-    font-weight: bold;
-    width: 25%;
-    margin-top: 1rem;
-}
-
-.min__year, .max__year {
-    width: 50%;
-}
-
-input, button {
-    height: 2rem;
-    background-color: rgba(255, 255, 255, 0.7);
-    text-transform: uppercase;
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }

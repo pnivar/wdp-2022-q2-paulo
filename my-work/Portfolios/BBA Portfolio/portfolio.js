@@ -1,30 +1,33 @@
 window.onload = function(){
-
-    // Header hide effect.
-    const nav = document.querySelector('.header');
-    let lastScrollY = window.scrollY;
-
-    window.addEventListener('scroll', () => {
-        if (lastScrollY < window.scrollY) {
-            nav.classList.add('nav--hidden');
-        } else {
-            nav.classList.remove('nav--hidden');
-        }
-
-        lastScrollY = window.scrollY;
+    // Horizontal scrolling.
+    const container = document.querySelector('.container');
+    let scrollLine = document.querySelector('.scroll');
+    
+    container.addEventListener('wheel', (e)=> {
+        e.preventDefault();
+        container.scrollLeft += e.deltaY;
+        scrollLine.style.width = container.scrollLeft / 4 + 'px';
     });
 
-    // Greetings effect.
+    function sendEmail(){
+        Email.send({
+            Host : "smtp.gmail.com",
+            Username : "nivarpaulo@gmail.com",
+            Password : "@My@Gmail2022",
+            To : 'nivarpaulo@gmail.com',
+            From : document.getElementById('email').value,
+            Subject : "New Contact Form Enquiry",
+            Body : "Name: " + document.getElementById('name').value 
+                + '<br> Email; ' + document.getElementById('email').value
+                + '<br> Phone no; ' + document.getElementById('phone').value
+                + '<br> Message; ' + document.getElementById('message').value
+        }).then(
+          message => alert('Message Sent Succesfully')
+        );
+    }
+
+
+    
    
-
-    // Ressume pop up window.
-    document.getElementById('download__resume').addEventListener('click', function(){
-    document.querySelector('.bg__modal').style.display = 'flex';
-    });
-
-    document.querySelector('#close').addEventListener('click', function(){
-    document.querySelector('.bg__modal').style.display = 'none';
-    });
-
 
 }

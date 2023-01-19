@@ -9,25 +9,29 @@ window.onload = function(){
         scrollLine.style.width = container.scrollLeft / 4 + 'px';
     });
 
-    function sendEmail(){
-        Email.send({
-            Host : "smtp.gmail.com",
-            Username : "nivarpaulo@gmail.com",
-            Password : "@My@Gmail2022",
-            To : 'nivarpaulo@gmail.com',
-            From : document.getElementById('email').value,
-            Subject : "New Contact Form Enquiry",
-            Body : "Name: " + document.getElementById('name').value 
-                + '<br> Email; ' + document.getElementById('email').value
-                + '<br> Phone no; ' + document.getElementById('phone').value
-                + '<br> Message; ' + document.getElementById('message').value
-        }).then(
-          message => alert('Message Sent Succesfully')
-        );
-    }
+   /* Email submision */
 
+   function sendEmail(){
+    const params = {
+        name: document.getElementById('name').value,
+        phone: document.getElementById('phone').value,
+        email: document.getElementById('email').value,
+        message: document.getElementById('message').value,
+    };
 
-    
-   
+    const serviceId = 'nivarpaulo@gmail.com';
+    const templateId = 'template_td6nztn';
 
+    emailjs
+    .send(serviceId,templateId,params)
+    .then((res) => {
+            document.getElementById('name').value = '';
+            document.getElementById('phone').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('message').value = '';
+            console.log(res);
+            alert('Your message was sent successfullly');
+        })
+    .catch((err) => console.log(err));
+   }
 }

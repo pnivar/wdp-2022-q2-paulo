@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(0,83,255);
+    background: linear-gradient(45deg, rgba(0,83,255,1) 0%, rgba(38,130,255,1) 35%);
+    font-family: 'Poppins', sans-serif;
+    width: 100vw;
+    height: 100vh;
+}
+
+form {
+    background-color: rgb(255, 255, 255);
+    width: 300px; 
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.15);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.heading {
+    font-size: 1.5rem;
+    font-weight:700;
+}
+
+.email {
+    margin-top: 1rem;
+    color: rgba(0,0,0,0.5);
+}
+
+.password {
+    color: rgba(0,0,0,0.5);
+}
+
+label {
+    font-weight: bold;
+    display: block;
+}
+
+input {
+    border-radius: 3px;
+    margin-bottom: 1rem;
+    height: 2rem;
+    width: 100%;
+}
+
+.remember--user {
+    display: flex;
+    align-items: center;
+}
+
+.col {
+    display: flex;
+    gap: 6px;
+}
+
+.check__box--square {
+    
+}
+
+.remember--me {
+    display: inline-block;
+}
+
+.remember--me label {
+    padding-top: 5px;
+    font-weight: normal;
+}
+
+.sign--in {
+    border: none;
+    border-radius: 5px;
+    background-color: #0053ff;
+    color: rgb(255, 255, 255);
+    width: 6.5rem;
+    font-weight: bold;
+    height: 2.3rem;
+}
+
+.sign--in:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <form method="GET" action="">
+        <label for="search-title">Title</label>
+        <input type="search" id="search-title" name="search-title" />
+  
+        <label for="search-min-year">Min Year</label>
+        <input type="number" id="search-min-year" name="search-min-year" />
+  
+        <label for="search-max-year">Max Year</label>
+        <input type="number" id="search-max-year" name="search-max-year" />
+  
+        <button id="search-btn">Search</button>
+      </form>
+  
+      <i id="results-spinner" class="fa-solid fa-circle-notch"></i>
+  
+      <div id="search-results"></div>
+  
+      <script src="./movie-search.js"></script>
+</body>
+</html>

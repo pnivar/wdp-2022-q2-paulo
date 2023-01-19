@@ -1,0 +1,31 @@
+form {
+}
+#search-results {
+  margin-top: 25px;
+}
+.search-result {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+#results-spinner {
+  margin-top: 10px;
+  display: none;
+  font-size: 26px;
+  color: rgb(0, 115, 255);
+  animation: rotation 1.5s infinite linear;
+}
+.results-spinner--show {
+  /* use important to guarantee this value gets set */
+  display: inline-block !important;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}

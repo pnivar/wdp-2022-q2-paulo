@@ -1,6 +1,6 @@
-window.onload = function(){
+
     // Horizontal scrolling.
-    const container = document.querySelector('.container');
+    const container = document.querySelector('.pages__l-container');
     let scrollLine = document.querySelector('.scroll');
     
     container.addEventListener('wheel', (e)=> {
@@ -34,4 +34,3 @@ window.onload = function(){
         })
     .catch((err) => console.log(err));
    }
-}

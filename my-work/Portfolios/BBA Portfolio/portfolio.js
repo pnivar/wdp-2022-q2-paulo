@@ -1,14 +1,4 @@
 
-    // Horizontal scrolling.
-    const container = document.querySelector('.pages__l-container');
-    let scrollLine = document.querySelector('.scroll');
-    
-    container.addEventListener('wheel', (e)=> {
-        e.preventDefault();
-        container.scrollLeft += e.deltaY;
-        scrollLine.style.width = container.scrollLeft / 4 + 'px';
-    });
-
    /* Email submision */
 
    function sendEmail(){

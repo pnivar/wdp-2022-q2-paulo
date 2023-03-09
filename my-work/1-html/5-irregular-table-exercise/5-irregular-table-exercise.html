@@ -1,79 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Irregular Table</title>
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background: url("black_texture.png");
+        height: 100vh;
+        display: flex;
+        align-items: center;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
 
-        body {
-            display: flex;
-                align-items: center;
-                justify-content: center;
-            height: 100vh;
-        }
-        table, th, td {
-            border: 1px solid black;
-        }
-
-        table {
-            background-color: #0093E9;
-            background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
-
-        }
+      table {
+        background-color: #0093e9;
+        background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+        height: 60vh;
+        margin: auto;
+        width: 60vw;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <table>
-        <thead>
-            <th>Monday</th>
-            <th>Tuesday</th>
-            <th>Wednesday</th>
-            <th>Thursday</th>
-            <th>Friday</th>
-            <th>Saturday</th>
-        </thead>
-        <tbody>
-            <tr>
-                <td colspan="4" rowspan="2">Early Bird Swim <br> 6am-8:30am</td>
-                <td>Early Birds Swim 6:00am-7:30am</td>
-                <td rowspan="2">Early Birds swim 6:00 am -8:30am</td>
-            </tr>
-            <tr>
-                <td>StaffMeeting 7:30am-8:30am</td>
-            </tr>
-            <tr>
-                <td colspan="4" rowspan="2">Cardston Schools 8:30am-3:00pm</td>
-                <td>Cardston Schools 8:30pm- 12:00pm</td>
-                <td>Rentals 10:00 am - 12:00pm</td>
-            </tr>
-            <tr>
-                <td colspan="6">Lane Swim /Parent & Tot 12:00pm-1:00pm</td>
-            </tr>
-            <tr>
-                <td colspan="4">Swim Club 3:15-5:00pm</td>
-                <td colspan="2">Public Swim 1:00pm-5:00pm</td>
-            </tr>
-            <tr>
-                <td colspan="6">Lane Swim 5:00-6:00pm</td>
-            </tr>
-            <tr>
-                <td>Family 6:00-8:00pm</td>
-                <td colspan="5">Public Swim 6:00pm-8:00pm</td>
-            </tr>
-            <tr>
-                <td>Aqua Fit 8-9</td>
-                <td></td>
-                <td>Aqua Fit 8-9</td>
-                <td></td>
-                <td colspan="2">Rentals 8:00pm-10:00pm</td>
-            </tr>
-            <tr>
-                <td colspan="4">Rentals until 10:00pm</td>
-                <td colspan="2">Rentals 9:00pm-10:00pm</td>
-            </tr>
-        </tbody>
+      <thead>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="4" rowspan="2">
+            Early Bird Swim <br />
+            6am-8:30am
+          </td>
+          <td>Early Birds Swim 6:00am-7:30am</td>
+          <td rowspan="2">Early Birds swim 6:00 am -8:30am</td>
+        </tr>
+        <tr>
+          <td>StaffMeeting 7:30am-8:30am</td>
+        </tr>
+        <tr>
+          <td colspan="4" rowspan="2">Cardston Schools 8:30am-3:00pm</td>
+          <td>Cardston Schools 8:30pm- 12:00pm</td>
+          <td>Rentals 10:00 am - 12:00pm</td>
+        </tr>
+        <tr>
+          <td colspan="6">Lane Swim /Parent & Tot 12:00pm-1:00pm</td>
+        </tr>
+        <tr>
+          <td colspan="4">Swim Club 3:15-5:00pm</td>
+          <td colspan="2">Public Swim 1:00pm-5:00pm</td>
+        </tr>
+        <tr>
+          <td colspan="6">Lane Swim 5:00-6:00pm</td>
+        </tr>
+        <tr>
+          <td>Family 6:00-8:00pm</td>
+          <td colspan="5">Public Swim 6:00pm-8:00pm</td>
+        </tr>
+        <tr>
+          <td>Aqua Fit 8-9</td>
+          <td></td>
+          <td>Aqua Fit 8-9</td>
+          <td></td>
+          <td colspan="2">Rentals 8:00pm-10:00pm</td>
+        </tr>
+        <tr>
+          <td colspan="4">Rentals until 10:00pm</td>
+          <td colspan="2">Rentals 9:00pm-10:00pm</td>
+        </tr>
+      </tbody>
     </table>
-</body>
+  </body>
 </html>

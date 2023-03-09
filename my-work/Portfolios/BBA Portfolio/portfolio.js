@@ -1,4 +1,34 @@
 
+/* Active Nav Links on Click */
+
+const links = document.querySelectorAll('.nav-links--container li');
+
+links.forEach(li=>{
+    li.addEventListener('click',()=>{
+        resetLinks();
+        li.classList.add('active-link');
+    })
+})
+
+function resetLinks(){
+    links.forEach(li=>{
+        li.classList.remove('active-link')
+    })
+}
+
+/* Scroll on Mouse wheel */
+
+
+
+
+/* Hamberger Menu Function */
+
+const toggleButton = document.getElementsByClassName('toggle-button')[0]
+const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+toggleButton.addEventListener('click', () => {
+    navbarLinks.classList.toggle('active')
+})
    /* Email submision */
 
    function sendEmail(){

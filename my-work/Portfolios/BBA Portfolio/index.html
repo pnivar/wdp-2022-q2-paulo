@@ -41,31 +41,33 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-     <!-- Header -->
-     <header>
-      <!-- Logo -->
-      <div class="logo-container">
-        <figure>
-          <img class="logo" src="PN Logo.png" alt="Paulo Nivar logo image" />
-        </figure>
-      </div>
+    <!-- Header Starts -->
+    <header>
       <!-- Navegation Links -->
-      <div class="nav-container">
-        <nav class="nav">
-          <ul class="nav-links-container">
-            <li><a class="link" href="#home">home</a></li>
-            <li><a class="link" href="#about">about</a></li>
-            <li><a class="link" href="#skills">skills</a></li>
-            <li><a class="link" href="#projects">projects</a></li>
-            <li><a class="link" href="#contact">contact</a></li>
-          </ul>
+        <nav class="navbar">
+          <figure class="logo-container">
+            <img class="logo" src="PN-Logo.png" alt="Paulo Nivar logo image" />
+          </figure>
+          <a class="toggle-button" href="#">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
+          <div class="navbar-links">
+            <ul class="nav-links--container">
+              <li><a class="link" href="#home">home</a></li>
+              <li><a class="link" href="#about">about</a></li>
+              <li><a class="link" href="#projects">projects</a></li>
+              <li><a class="link" href="#contact">contact</a></li>
+            </ul>
+          </div>
         </nav>
-      </div>
     </header>
-    <!-- Main Content Sections-->
+    <!-- Header Ends -->
+    <!-- Main Content Sections Starts-->
     <main class="pages-wrapper">
+      <!-- Home Section Starts -->
       <section class="page home-page" id="home">
-        <h2 class="page--heading">home</h2>
         <div class="page-content--wrapper home-page--content-wrapper">
           <p class="greetings">
             <span class="letter">H</span>
@@ -84,83 +86,87 @@
             <span class="letter">e</span>
           </p>
           <div class="identity">
-            <p>My Name is |<span> Paulo</span></p>
-            <p>I am a |<span> Front-End Developer</span></p>
-            <p class="intro">I am a developer whose ultimate goal is to develop the best UX designs through passion, dedication, and commitment.</p>
+            <p class="name">My Name is <span>| Paulo</span></p>
+            <p class="specialty">I am a <span>|  Front-End Developer</span></p>
+            <p class="intro">I am a talented Front-End Developer with the ultimate goal of developing the best UX designs through passion, dedication, and commitment.</p>
+            <div class="tech-stack-slide-show--container">
+              <h6 class="tech-stack--label">Tech Stack |</h6>
+              <div class="tech-stack--slide-show">
+                <ul class="tech-stack--slides">
+                  <li class="tech-stack--slide">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" />
+                  </li>
+                  <li class="tech-stack--slide">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" />
+                  </li>
+                  <li class="tech-stack--slide">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" />
+                  </li>
+                  <li class="tech-stack--slide">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg" />
+                  </li>
+                  <li class="tech-stack--slide"> 
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original-wordmark.svg" />
+                  </li>
+                  <li class="tech-stack--slide"> 
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" />
+                  </li>
+                  <li class="tech-stack--slide"> 
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />
+                  </li>
+                  <li class="tech-stack--slide">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" />
+                  </li>
+                  <li class="tech-stack--slide">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" />
+                  </li>
+                  <li class="tech-stack--slide">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" />
+                  </li>
+                  <li class="tech-stack--slide">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg" />
+                  </li>
+                  <li class="tech-stack--slide"> 
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original-wordmark.svg" />
+                  </li>
+                  <li class="tech-stack--slide"> 
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" />
+                  </li>
+                  <li class="tech-stack--slide"> 
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      <section class="page about-page" id="about">
-        <h2 class="page--heading">about</h2>
-        <div class="page page-content--wrapper about-page--content-wrapper">
-          <figure class="left-column">
-           <div class="motor-pool"></div>
-           <div class="gaming-pc"></div>
-           <div class="code-screen"></div>
-          </figure>
-          <div class="right-column">
-            <p>A United States Marine Corps veteran transitioning from the Transportation and Logistics Industry onto the modern world of IT
-              and Computer Science.</p>
-            <p>I have always had a passion for computers and how they function. Many years ago, I jumped into the world of computers as a PC enthusiast, assembling my gaming computers. Today I am emerging deeper into the IT world by starting my computer science journey as a front-end developer.</p>
-            <p>I felt very committed to my software development journey from the first day. I found passion in programming and realized I was guiding myself toward adopting a new exciting career. I enjoy being a front-end developer and will look forward to becoming the best possible developer.</p>
+      <!-- Home Section Ends-->
 
+      <!-- About Section Starts -->
+      <section class="page about-page" id="about">
+        <div class="page page-content--wrapper about-page--content-wrapper">
+          <div class="about-page--container">
+            <div class="motor-pool--image">
+              <p>
+              A United States Marine Corps veteran transitioning from the Transportation and Logistics Industry onto the modern world of IT
+                and Computer Science.
+              </p>
+            </div>
+            <div class="gaming-pc--image">
+              <p>I have always had a passion for computers. Years ago, I jumped into the world of computers as a PC enthusiast, assembling gaming computers. Today I am emerging deeper into the tech world by starting my computer science journey as a front-end developer.
+              </p>
+            </div>
+            <div class="coding--image">
+              <p>I am enjoying being a developer. I felt committed to software development from the first day. I found passion in programming and realized I was guiding myself toward adopting a new exciting career.</p>
+            </div>
           </div>
         </div>
       </section>
-      <section class="page skills-page" id="skills">
-        <h2 class="page--heading">skills</h2>
-        <div class="page page-content--wrapper skills-page--content-wrapper">
-          <div class="page-3__slide__show">
-            <ul class="page-3__slides">
-              <li class="page-3__slide">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" />
-              </li>
-              <li class="page-3__slide">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" />
-              </li>
-              <li class="page-3__slide">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" />
-              </li>
-              <li class="page-3__slide">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg" />
-              </li>
-              <li class="page-3__slide"> 
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original-wordmark.svg" />
-              </li>
-              <li class="page-3__slide"> 
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" />
-              </li>
-              <li class="page-3__slide"> 
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />
-              </li>
-              <li class="page-3__slide">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" />
-              </li>
-              <li class="page-3__slide">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" />
-              </li>
-              <li class="page-3__slide">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" />
-              </li>
-              <li class="page-3__slide">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg" />
-              </li>
-              <li class="page-3__slide"> 
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original-wordmark.svg" />
-              </li>
-              <li class="page-3__slide"> 
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" />
-              </li>
-              <li class="page-3__slide"> 
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />
-              </li>
-            </ul>
-          </div>
-          <div class="skills"></div>
-        </div>
-      </section>
+      <!-- About Section Ends -->
+
+      <!-- Projects Section Starts -->
       <section class="page projects-page" id="projects">
-        <h2 class="page--heading">projects</h2>
         <div class="page page-content--wrapper projects-page--content-wrapper">
           <div class="case-study--projects">
             <h3>Case Study Projects</h3>
@@ -274,8 +280,10 @@
           </div>
         </div>
       </section>
+      <!-- Projects Section Ends -->
+
+      <!-- Contact Section Starts -->
       <section class="page contact-page" id="contact">
-        <h2 class="page--heading">contact</h2>
         <div class="page page-content--wrapper contact-page--content-wrapper">
           <form>
            <fieldset class="row">
@@ -300,8 +308,11 @@
           </form>
         </div>
       </section>
+      <!-- Contact Section Ends -->
     </main>
-    <!-- Footer -->
+    <!-- Main Content Sections Ends-->
+    
+    <!-- Footer Starts -->
     <footer>
       <div></div>
       <div class="sm-icons">
@@ -314,7 +325,9 @@
 
       </div>
     </footer>
+    <!-- Footer Ends -->
 
+    <!-- Email Function Script Starts -->
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
@@ -325,7 +338,10 @@
         emailjs.init("V0p5TrFf5-efTlQ55");
       })();
     </script>
+    <!-- Email Function Script Ends -->
 
+    <!-- Javascript Script starts -->
     <script src="./portfolio.js"></script>
+    <!-- Javascript Script Ends -->
   </body>
 </html>
